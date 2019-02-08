@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import {Helmet} from "react-helmet";
 import '../css/Page.css'
 
 class Register extends Component {
@@ -9,6 +10,11 @@ class Register extends Component {
             <div>
                 <Header />
                 <div className="container">
+                    <Helmet>
+                        <meta charSet="utf-8" />
+                        <title>HIS | Register</title>
+                    </Helmet>
+                    
                     <div className="card">
                         <div className="grid">
                             <div className="row flex-align-center">

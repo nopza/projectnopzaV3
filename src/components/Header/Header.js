@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
+import Regis from '../iconMain/iconSetMainForm64_addPatient.png';
+import SendP from '../iconMain/iconSetMainForm64_sendPatient.png';
+import Nurse from '../iconMain/iconSetMainForm64_nurse-04.png';
+import Doc from '../iconMain/iconSetMainForm64_doctor.png';
+import Drug from '../iconMain/iconSetMainForm64_drug.png';
+import Xray from '../iconMain/iconSetMainForm64_xray-15.png';
+import Coin from '../iconMain/iconSetMainForm64_coin.png';
+import Manage from '../iconMain/iconSetMainForm64_calendar.png';
 
 class Header extends Component {
     render() {
@@ -12,6 +21,7 @@ class Header extends Component {
                         <li><a href="#">Setting</a></li>
                         <li><a href="#">Reports</a></li>
                     </ul>
+                   
 
                     <div className="content-holder">
                         <div className="section" id="section-1-1">
@@ -19,40 +29,40 @@ class Header extends Component {
                                 <a href="/register">
                                     <button className="ribbon-button">
                                         <span className="icon">
-                                            <img src="images/share.svg" />
+                                            <img src={Regis} />
                                         </span>
-                                        <span className="caption">ลงทะเบียนผู้ป่วย</span>
+                                        <span className="caption">ทะเบียนผู้ป่วย</span>
                                     </button>
                                 </a>
-
-                                <button className="ribbon-button">
-                                    <span className="icon">
-                                        <img src="images/share.svg" />
-                                    </span>
-                                    <span className="caption">ส่งตรวจผู้ป่วย</span>
-                                </button>
-
+                                <a href="/sendpatient">
+                                    <button className="ribbon-button">
+                                        <span className="icon">
+                                            <img src={SendP} />
+                                        </span>
+                                        <span className="caption">ส่งตรวจผู้ป่วย</span>
+                                    </button>
+                                </a>
                                 <span className="title">เวชระเบียน</span>
                             </div>
 
                             <div className="group">
                                 <button className="ribbon-button">
                                     <span className="icon">
-                                        <img src="images/share.svg" />
+                                        <img src={Nurse} />
                                     </span>
                                     <span className="caption">งานหน้าห้องตรวจ</span>
                                 </button>
 
                                 <button className="ribbon-button">
                                     <span className="icon">
-                                        <img src="images/share.svg" />
+                                        <img src={Doc} />
                                     </span>
                                     <span className="caption">ห้องตรวจแพทย์</span>
                                 </button>
 
                                 <button className="ribbon-button">
                                     <span className="icon">
-                                        <img src="images/share.svg" />
+                                        <img src={Drug} />
                                     </span>
                                     <span className="caption">งานห้องจ่ายยา</span>
                                 </button>
@@ -62,7 +72,7 @@ class Header extends Component {
                             <div className="group">
                                 <button className="ribbon-button">
                                     <span className="icon">
-                                        <img src="images/share.svg" />
+                                        <img src={Xray} />
                                     </span>
                                     <span className="caption">งานหน้าห้อง X-ray</span>
                                 </button>
@@ -73,7 +83,7 @@ class Header extends Component {
                             <div className="group">
                                 <button className="ribbon-button">
                                     <span className="icon">
-                                        <img src="images/share.svg" />
+                                        <img src={Coin} />
                                     </span>
                                     <span className="caption">งานห้องการเงิน</span>
                                 </button>
@@ -84,7 +94,7 @@ class Header extends Component {
                             <div className="group">
                                 <button className="ribbon-button">
                                     <span className="icon">
-                                        <img src="images/share.svg" />
+                                        <img src={Manage} />
                                     </span>
                                     <span className="caption">Manage Session</span>
                                 </button>

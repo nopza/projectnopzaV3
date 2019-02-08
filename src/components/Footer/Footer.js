@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div>
         <footer className="footer">
-            © 2018 Copyright:Test
+            © 2018 Copyright : Suranaree university of Technology Hospital
         </footer>
       </div>
     );
